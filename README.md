@@ -12,12 +12,19 @@
 
 
 ### La interfaz gráfica de usuario
+#### Mejoras:
+- Se mejoró el encabezado.
+- Se cambió el color del texto.
 
-![Home](Results/01.jpg)
+![Home](Results/0101.png)
 
 ### Formulario de registro
 
-![Formulario](Results/02.jpg)
+- Se cambio el color del encabezado y botón de envío.
+- Se agregó un modal al guardar un registro, si el registro es satisfactorio: indica que el registro se ha realizado de manera satisfactoria.
+- Redirección a la página principal al registrar un registro.
+
+![Formulario](Results/0202.png)
 
 ### Registro Almacenado
 
