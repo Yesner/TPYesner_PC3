@@ -10,12 +10,12 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card shadow-lg">
-                <div class="card-header bg-primary text-white text-center">
+                <div class="card-header bg-info text-white text-center">
                     <h2>Registro</h2>
                     <p>Por favor, rellena todos los campos</p>
                 </div>
                 <div class="card-body">
-                    <form asp-action="Create">
+                    <form id="createForm" asp-action="Create">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <div class="form-group">
                             <label asp-for="Nombre" class="control-label"></label>
@@ -45,9 +45,19 @@
                         </div>
                         <br/>
                         <div class="form-group">
-                            <input type="submit" value="Crear" class="btn btn-primary btn-block" />
+                            <input type="submit" value="Registrarse" class="btn btn-info btn-block" />
                         </div>
+                        
                     </form>
+
+                    <div id="successModal">
+                    <div>
+                        <h3>Registro exitoso</h3>
+                        <p>El registro se ha realizado de manera satisfactoria.</p>
+                        <button id="closeModal">&times;</button>
+                    </div>
+                    </div>
+
                 </div>
             </div>
         </div>
